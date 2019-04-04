@@ -1,1 +1,1 @@
-I AM libDependency.nut v0.0.1
+local str = "I AM libDependency.nut level 1";
