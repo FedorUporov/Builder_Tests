@@ -17,8 +17,8 @@
 @if USE_ABSOLUTE_INCLUDES
     "==== USE_ABSOLUTE_INCLUDES BEGIN ===="
     @include __PATH__ + "/libDependency.nut"
-    //@include __PATH__ + "/../libDependency.nut"
     @include __PATH__ + "/lib/libDependency.nut"
+    @include __PATH__ + "/../libDependency.nut"
     "==== USE_ABSOLUTE_INCLUDES END ======"
 @endif
 
