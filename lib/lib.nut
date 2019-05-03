@@ -1,32 +1,40 @@
 @if USE_INCLUDES
     "==== USE_INCLUDES BEGIN ===="
+    @include "lib/libDependency.nut"
     @include "libDependency.nut"
     @include "../libDependency.nut"
-    @include "lib/libDependency.nut"
+    @include "../lib1/libDependency.nut"
+    @include "../lib1/lib1/libDependency.nut"
     "==== USE_INCLUDES END ======"
 @endif
 
 @if USE_WIN_INCLUDES
     "==== USE_WIN_INCLUDES BEGIN ===="
+    @include "lib\\libDependency.nut"
     @include "libDependency.nut"
     @include "..\\libDependency.nut"
-    @include "lib\\libDependency.nut"
+    @include "..\\lib1\\libDependency.nut"
+    @include "..\\lib1\\lib1\\libDependency.nut"
     "==== USE_WIN_INCLUDES END ======"
 @endif
 
 @if USE_ABSOLUTE_INCLUDES
     "==== USE_ABSOLUTE_INCLUDES BEGIN ===="
-    @include __PATH__ + "/libDependency.nut"
     @include __PATH__ + "/lib/libDependency.nut"
+    @include __PATH__ + "/libDependency.nut"
     @include __PATH__ + "/../libDependency.nut"
+    @include __PATH__ + "/../lib1/libDependency.nut"
+    @include __PATH__ + "/../lib1/lib1/libDependency.nut"
     "==== USE_ABSOLUTE_INCLUDES END ======"
 @endif
 
 @if USE_WIN_ABSOLUTE_INCLUDES
     "==== USE_WIN_ABSOLUTE_INCLUDES BEGIN ===="
-    @include __PATH__ + "\\libDependency.nut"
-    //@include __PATH__ + "/../libDependency.nut"
     @include __PATH__ + "\\lib\\libDependency.nut"
+    @include __PATH__ + "\\libDependency.nut"
+    @include __PATH__ + "\\..\\libDependency.nut"
+    @include __PATH__ + "\\..\\lib1\\libDependency.nut"
+    @include __PATH__ + "\\..\\lib1\\lib1\\libDependency.nut"
     "==== USE_WIN_ABSOLUTE_INCLUDES END ======"
 @endif
 
