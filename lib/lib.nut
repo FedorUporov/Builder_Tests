@@ -5,6 +5,7 @@
     @include "../libDependency.nut"
     @include "../lib1/libDependency.nut"
     @include "../lib1/lib1/libDependency.nut"
+    @include "../lib1/lib1/../libDependency1.nut"
     "==== USE_INCLUDES END ======"
 @endif
 
@@ -15,6 +16,7 @@
     @include "..\\libDependency.nut"
     @include "..\\lib1\\libDependency.nut"
     @include "..\\lib1\\lib1\\libDependency.nut"
+    @include "..\\lib1\\lib1\\..\\libDependency1.nut"
     "==== USE_WIN_INCLUDES END ======"
 @endif
 
@@ -25,6 +27,7 @@
     @include __PATH__ + "/../libDependency.nut"
     @include __PATH__ + "/../lib1/libDependency.nut"
     @include __PATH__ + "/../lib1/lib1/libDependency.nut"
+    @include __PATH__ + "/../lib1/lib1/../libDependency1.nut"
     "==== USE_ABSOLUTE_INCLUDES END ======"
 @endif
 
@@ -35,6 +38,7 @@
     @include __PATH__ + "\\..\\libDependency.nut"
     @include __PATH__ + "\\..\\lib1\\libDependency.nut"
     @include __PATH__ + "\\..\\lib1\\lib1\\libDependency.nut"
+    @include __PATH__ + "\\..\\lib1\\lib1\\..\\libDependency1.nut"
     "==== USE_WIN_ABSOLUTE_INCLUDES END ======"
 @endif
 
